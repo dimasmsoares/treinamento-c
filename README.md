@@ -17,13 +17,15 @@ Este repositório documenta minha jornada de aprendizado da linguagem C, seguind
 
     C permite o controle de hardware de forma muito direta, especialmente o gerenciamento de memória através de ponteiros.
 
+    Aprendi a estrutura básica de um programa em C: a diretiva `#include` para usar bibliotecas, a função `main()` como ponto de entrada, a função `printf()` para exibir texto e a importância do `return 0;`. Também entendi o processo de compilação (transformar código `.c` em um executável) e execução.
+
     **Ação Prática:** Revisei a instalação das ferramentas de linha de comando do Xcode no meu Mac. O compilador `clang` e o `git` estão instalados e funcionando corretamente. O VS Code com a extensão C/C++ também está pronto.
 
-    * **Dificuldades:** Nenhuma hoje, foi um dia teórico.
+    Criei o arquivo `ola_mundo.c`, compilei com `clang -o ola_mundo ola_mundo.c` e executei com `./ola_mundo`. O programa funcionou perfeitamente!
 
-* **Dia 2 (DD/MM/AAAA):** Estudei sobre variáveis e os tipos de dados primitivos (`int`, `char`, `float`, `double`).
-    * *Desafios:* Entender o tamanho que cada tipo de dado ocupa na memória.
-    * *Código:* [Link para os exercícios com variáveis](Mês1_Fundamentos/Semana1_Introducao_Basicos/exercicios_variaveis.c)
+    * **Código:** [Link para o código](mes01_fundamentos/sem01_introducao_basicos/ola_mundo.c)
+
+    * **Dificuldades:** Prestar atenção para não esquecer o ponto e vírgula `;` no final das instruções.
 
 ---
 
