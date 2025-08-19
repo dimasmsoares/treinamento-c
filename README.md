@@ -27,6 +27,24 @@ Este repositório documenta minha jornada de aprendizado da linguagem C, seguind
 
     * **Dificuldades:** Prestar atenção para não esquecer o ponto e vírgula `;` no final das instruções.
 
----
+* **Dia 02 (18/08/2025): Variáveis, Tipos de Dados e Uma Profunda Análise da Memória**
+
+    * **Tópico Planejado - O Básico:**
+        * Aprendi o que é uma variável e como declará-la e inicializá-la em C.
+        * Estudei os tipos de dados fundamentais: `int` para inteiros, `float`/`double` para decimais e `char` para caracteres.
+        * Pratiquei o uso de especificadores de formato (`%d`, `%f`, `%.2f`, `%c`) para imprimir os valores das variáveis com `printf`.
+
+    * **Exploração Avançada (Investigação Pessoal):**
+        * **Comportamento Indefinido:** Através de um experimento prático, descobri o que acontece ao tentar imprimir uma variável `float` usando o especificador `%d`. O resultado foi um número inteiro gigante, o que me levou a investigar a causa.
+        * **Representação de Inteiros:** Aprendi como os números inteiros (`int`) são armazenados na memória. Para números positivos, é uma conversão direta para binário. Para números negativos, utiliza-se o sistema de **Complemento de Dois**, que envolve inverter os bits e somar 1.
+        * **Representação de Ponto Flutuante (O Grande Mergulho):** Aprofundei-me no complexo padrão **IEEE 754** para entender como um `float` é armazenado. Aprendi a dividir os 32 bits em suas três partes constituintes:
+            1.  **Sinal (1 bit):** `0` para positivo, `1` para negativo.
+            2.  **Expoente (8 bits):** Usa um "bias" (127) para representar a magnitude do número.
+            3.  **Mantissa (23 bits):** Armazena a precisão (os dígitos) do número, utilizando um "1" implícito para economizar espaço.
+        * **Aplicação Prática:** Realizei a conversão manual completa do número `1.82` para sua representação binária de 32 bits, incluindo o cálculo da mantissa e do expoente com bias, e discuti as regras de arredondamento.
+        * **A Grande Síntese:** Concluí o dia entendendo que uma mesma sequência de 32 bits pode representar tanto o número `1.82` (se lida como `float`) quanto o número `1.072.833.859` (se lida como `int`). Isso solidificou o conceito de que os **bits não têm significado próprio; o tipo de dado é a regra que lhes dá significado.**
+
+    * **Código:** [Link para o código de variáveis](Mês1_Fundamentos/Semana1_Introducao_Basicos/variaveis.c)
+    * **Dificuldades:** A complexidade inicial do padrão IEEE 754, mas a conversão manual passo a passo tornou o conceito muito mais claro.
 
 *(Continue o diário aqui a cada dia)*
